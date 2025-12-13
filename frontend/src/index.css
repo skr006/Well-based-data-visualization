@@ -10,14 +10,12 @@ body {
   color: #1f2937;
 }
 
-/* ===== App Container ===== */
 .app-container {
   max-width: 1200px;
   margin: auto;
   padding: 24px;
 }
 
-/* ===== Header ===== */
 .app-title {
   font-size: 28px;
   font-weight: 600;
@@ -30,14 +28,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===== Controls ===== */
-.controls {
-  background: #ffffff;
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
-}
+
 
 label {
   font-size: 14px;
@@ -45,7 +36,6 @@ label {
   margin-right: 10px;
 }
 
-/* ===== Select Dropdown ===== */
 select {
   padding: 8px 12px;
   font-size: 14px;
@@ -55,19 +45,13 @@ select {
   min-width: 260px;
 }
 
-select:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-}
 
-/* ===== Loading / Messages ===== */
 .status-text {
   font-size: 14px;
   margin-top: 10px;
   color: #374151;
 }
 
-/* ===== Chart Cards ===== */
 .chart-card {
   background: #ffffff;
   border-radius: 12px;
@@ -83,7 +67,6 @@ select:focus {
   color: #111827;
 }
 
-/* ===== Footer (optional) ===== */
 .footer {
   margin-top: 40px;
   text-align: center;
