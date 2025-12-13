@@ -31,18 +31,20 @@ export default function TimeSeriesCharts({ data }) {
   return (
     <div>
       {available.map((p) => (
-        <div key={p} style={{ height: 300, marginBottom: 40 }}>
-          <h3>{p}</h3>
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={formatted}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="date" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Line type="monotone" dataKey={p} stroke="#000" dot={false} />
-            </LineChart>
-          </ResponsiveContainer>
+        <div key={p} className="chart-card">
+          <div className="chart-title">{p}</div>
+          <div style={{ height: 280 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={formatted}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey={p} stroke="#000" dot={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       ))}
     </div>

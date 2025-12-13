@@ -1,10 +1,92 @@
-body {
-  background: #f8f8f8;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* ===== App Container ===== */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* ===== Header ===== */
+.app-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.app-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ===== Controls ===== */
+.controls {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+/* ===== Select Dropdown ===== */
 select {
-  padding: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  min-width: 260px;
+}
+
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* ===== Loading / Messages ===== */
+.status-text {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #374151;
+}
+
+/* ===== Chart Cards ===== */
+.chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* ===== Footer (optional) ===== */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
 }

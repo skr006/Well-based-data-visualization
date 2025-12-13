@@ -33,12 +33,12 @@ export default function App() {
   }, [selected]);
 
   return (
-    <div style={{ padding: 20, fontFamily: "Arial" }}>
-      <h1>Well Data Visualizer</h1>
+    <div className="app-container">
+      <h1 className="app-title">Well Data Visualizer</h1>
 
       <Well wells={wells} value={selected} onChange={setSelected} />
 
-      {loading && <p>Loading…</p>}
+      {loading && <p className="status-text">Loading…</p>}
 
       {!loading && selected && data.length > 0 && (
         <TimeSeriesCharts data={data} />
