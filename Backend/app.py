@@ -79,9 +79,6 @@ def get_well_data(well_name):
 
     return jsonify({"well": well_name, "count": len(rows), "data": rows})
 
-@app.route('/health')
-def health():
-    return jsonify({"status": "ok"})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
